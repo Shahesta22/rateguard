@@ -1,0 +1,29 @@
+{
+  "name": "rateguard",
+  "version": "1.0.0",
+  "description": "Redis-backed sliding window API rate limiter and IP throttler",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/backend/server.js",
+    "start": "node src/backend/server.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "rate-limiter",
+    "redis",
+    "api-security",
+    "sliding-window"
+  ],
+  "author": "RateGuard Team",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "redis": "^5.8.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
